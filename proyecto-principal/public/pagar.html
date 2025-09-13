@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar</title>
+    <link rel="stylesheet" href="/proyecto-principal/public/CSS/style.css">
+</head>
+<body>
+    
+<header>
+    <nav class="navbar">
+      <h1 class="logo">Empanadas Roberto.</h1>
+      <ul class="nav-links">
+      <li> <a href="./index.html"> inicio</a></li>
+      <li><a href="./menu.html">menú</a></li>
+      <li><a href="./carrito.html">carrito</a></li>
+      <li><a href="./contacto.html">contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<h1>Formulario de pago:</h1>
+
+
+<form id="formEntrega">
+    <label for="nombre">Nombre y apellido:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="telefono">Número de teléfono:</label><br>
+    <input type="tel" id="telefono" name="telefono" required><br><br>
+
+    <label for="direccion"> dirección de entrega:</label><br>
+    <input type="text" id="direccion" name="direccion" required><br><br>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+
+
+<button type="button" id="btn-check-out"> Pagar con Mercado pago</button>
+<div id="mp-button-container"></div>
+<footer>
+  <p>Empanadas roberto no se responsabiliza por posibles moscas DENTRO de las empanadas.</p>
+</footer>
+
+</main>
+
+
+
+<script src="./proyecto-principal/public/js/carrito.js"></script>
+<script defer src="./proyecto-principal/public/js/btn-mp.js"></script>
+
+</body>
+</html>

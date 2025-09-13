@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/proyecto-principal/public/CSS/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Empanadas Roberto.</h1>
+      <ul class="nav-links">
+      <li> <a href="./index.html"> inicio</a></li>
+      <li><a href="./menu.html">menú</a></li>
+      <li><a href="./carrito.html">carrito</a></li>
+      <li><a href="./contacto.html">contacto</a></li>
+    </ul>
+  </nav>
+</header>    
+
+<main id="menu">
+<h1>Te presentamos todos nuestros productos</h1>
+
+<div class="ordenar">
+    <label for="ordenarPor">Ordenar por:</label>
+    <select id="ordenarPor">
+        <option value="categoria">Categoria</option>      
+        <option value="masVendidos"> Más vendidos</option>      
+        <option value="precio">Precio </option>
+    </select>
+</div>
+
+<div id="productos" class="productos-container "></div>
+
+<div id="mini-carrito">
+  <button id="vaciar"> vaciar carrito principal</button>
+</div>
+
+
+<footer>
+  <p>Empanadas roberto no se responsabiliza por posibles moscas DENTRO de las empanadas.</p>
+</footer>
+
+<script src="./proyecto-principal/public/js/catalogo.js"></script>
+<script defer src="./proyecto-principal/public/js/carrito.js"></script>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+<script defer src="./js/catalogo.js"></script>
+<script defer src="./js/carrito.js"></script>
+</body>
+</html>
