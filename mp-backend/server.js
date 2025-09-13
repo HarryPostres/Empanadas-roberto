@@ -37,7 +37,7 @@ preference.create({
   })
 })
 .catch(() => {
-  res.status(500).json({"error": "Algo salio mal wachin, en las preferencias"})
+  res.status(500).json({"error": "Algo salio mal en las preferencias"})
 });
 });
 
